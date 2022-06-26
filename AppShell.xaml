@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ReproductionProjectBug_Shellicon.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ReproductionProjectBug_Shellicon"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem
+        Title="Home"
+        Icon="{AppThemeBinding Dark=mainmenu_dark.png,Light=mainmenu_light.png}"
+        Route="MainFlyout">
+
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+    </FlyoutItem>
+
+
+    <FlyoutItem
+        Title="Info"
+        Icon="{AppThemeBinding Dark=infomenu_dark.png,Light=infomenu_light.png}"
+        Route="MainFlyout2">
+
+        <ShellContent
+            Title="Info"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage2" />
+
+    </FlyoutItem>
+
+
+    <FlyoutItem
+        Title="Help"
+        Icon="{AppThemeBinding Dark=helpmenu_dark.png,Light=helpmenu_light.png}"
+        Route="MainFlyout3">
+
+        <ShellContent
+            Title="Help"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage3" />
+
+    </FlyoutItem>
+
+</Shell>
