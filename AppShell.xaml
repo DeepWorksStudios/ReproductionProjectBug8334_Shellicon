@@ -8,7 +8,8 @@
 
     <FlyoutItem
         Title="Home"
-        Icon="{AppThemeBinding Dark=mainmenu_dark.png,Light=mainmenu_light.png}"
+        FlyoutIcon="{AppThemeBinding Dark=mainmenu_dark.png,
+                                     Light=mainmenu_light.png}"
         Route="MainFlyout">
 
         <ShellContent
@@ -21,7 +22,8 @@
 
     <FlyoutItem
         Title="Info"
-        Icon="{AppThemeBinding Dark=infomenu_dark.png,Light=infomenu_light.png}"
+        FlyoutIcon="{AppThemeBinding Dark=infomenu_dark.png,
+                                     Light=infomenu_light.png}"
         Route="MainFlyout2">
 
         <ShellContent
@@ -34,7 +36,8 @@
 
     <FlyoutItem
         Title="Help"
-        Icon="{AppThemeBinding Dark=helpmenu_dark.png,Light=helpmenu_light.png}"
+        FlyoutIcon="{AppThemeBinding Dark=helpmenu_dark.png,
+                                     Light=helpmenu_light.png}"
         Route="MainFlyout3">
 
         <ShellContent
@@ -42,6 +45,25 @@
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage3" />
 
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Format Menu"
+        FlyoutIcon="{AppThemeBinding Dark=formatmenu_dark.png,
+                                     Light=formatmenu_light.png}"
+        Route="MainFlyout4">
+        <ShellContent
+            Title="Paper"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="{AppThemeBinding Dark=papermenu_dark.png,
+                                         Light=papermenu_light.png}"
+            Route="MainPage4" />
+        <ShellContent
+            Title="Plate"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="{AppThemeBinding Dark=platemenu_dark.png,
+                                         Light=platemenu_light.png}"
+            Route="MainPage4v2" />
     </FlyoutItem>
 
 </Shell>
